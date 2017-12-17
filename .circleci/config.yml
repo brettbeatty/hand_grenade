@@ -7,10 +7,15 @@ jobs:
       - checkout
       - run:
           name: Install PyTest
-          command: pip install pytest
+          command: |
+            python -m venv venv
+            source venv/bin/activate
+            pip install pytest
       - run:
           name: Run Tests
-          command: pytest tests
+          command: |
+            source venv/bin/activate
+            pytest tests
       - run:
           name: Generate .pypirc
           command: |
