@@ -27,3 +27,9 @@ jobs:
       - deploy:
           name: Publish to PyPi
           command: python setup.py sdist upload
+      - deploy:
+          name: Code Coverage
+          command: |
+            source venv/bin/activate
+            pip install codecov
+            codecov
