@@ -10,13 +10,13 @@ jobs:
           command: |
             python -m venv venv
             source venv/bin/activate
-            pip install pytest codecov
+            pip install pytest codecov pytest-cov
       - run:
           name: Run Tests
           command: |
             source venv/bin/activate
             pytest tests
-            ptest --cov=./
+            ptest --cov=hand_grenade/ tests/
       - run:
           name: Generate .pypirc
           command: |
