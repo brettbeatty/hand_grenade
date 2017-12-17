@@ -8,6 +8,7 @@
 !/hand_grenade/__init__.py
 !/hand_grenade/hand_grenade.py
 !/tests/
+!/tests/__init__.py
 !/tests/test_hand_grenade.py
 !/.gitignore
 !/LICENSE
