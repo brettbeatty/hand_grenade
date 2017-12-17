@@ -5,7 +5,7 @@ with open('README.rst', 'r') as readme:
 
 setup(
     name='hand_grenade',
-    version='0.1.4',
+    version='0.1.5',
     description='the Python dict where close counts',
     long_description=long_description,
     author='Brett Beatty',

@@ -6,16 +6,16 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Install PyTest
+          name: Install PyTest & Codecov
           command: |
             python -m venv venv
             source venv/bin/activate
-            pip install pytest
+            pip install pytest codecov
       - run:
           name: Run Tests
           command: |
             source venv/bin/activate
-            pytest tests
+            pytest --cov=hand_grenade/ tests/
       - run:
           name: Generate .pypirc
           command: |
@@ -31,5 +31,4 @@ jobs:
           name: Code Coverage
           command: |
             source venv/bin/activate
-            pip install codecov
             codecov
