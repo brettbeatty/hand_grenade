@@ -2,16 +2,16 @@ HandGrenade: the Python dict where close counts
 ===============================================
 
 .. image:: https://img.shields.io/circleci/project/github/brettbeatty/hand_grenade.svg
-    :target: https://github.com/brettbeatty/hand_grenade
+    :target: https://circleci.com/gh/brettbeatty/hand_grenade
 
 .. image:: https://img.shields.io/github/license/brettbeatty/hand_grenade.svg
-    :target: https://github.com/brettbeatty/hand_grenade
+    :target: https://github.com/brettbeatty/hand_grenade/blob/master/LICENSE
 
 .. image:: https://img.shields.io/codecov/c/github/brettbeatty/hand_grenade.svg
-    :target: https://github.com/brettbeatty/hand_grenade
+    :target: https://codecov.io/gh/brettbeatty/hand_grenade
 
 .. image:: https://img.shields.io/pypi/v/hand_grenade.svg
-    :target: https://github.com/brettbeatty/hand_grenade
+    :target: https://pypi.org/project/hand_grenade/
 
 HandGrenade is a dict with numeric keys that allows lookup through nearby values. I decided not to call it horseshoe.
 
